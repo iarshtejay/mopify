@@ -4,6 +4,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import SpeedIcon from '@mui/icons-material/Speed';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 
+// ... (the features array remains the same)
 const features = [
   {
     icon: <CodeIcon fontSize="large" color="primary" />,
@@ -22,9 +23,19 @@ const features = [
   },
 ];
 
+
 function Features() {
   return (
-    <Container id="features" sx={{ py: { xs: 8, md: 10 } }}>
+    <Container 
+      id="features" 
+      sx={{ 
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        py: { xs: 8, md: 10 } 
+      }}
+    >
       <Typography variant="h3" component="h2" textAlign="center" gutterBottom sx={{ fontWeight: 'bold' }}>
         Why Choose Us?
       </Typography>
