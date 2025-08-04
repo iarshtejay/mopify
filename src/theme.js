@@ -15,6 +15,7 @@ const theme = createTheme({
   typography: {
     fontFamily: [
       '-apple-system',
+      'Omnes Regular',
       'BlinkMacSystemFont',
       '"Segoe UI"',
       'Roboto',
