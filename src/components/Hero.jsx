@@ -1,37 +1,68 @@
-import React from 'react';
-import { Box, Container, Typography, Button } from '@mui/material';
+import React from "react";
+import { Box, Container, Typography, Button } from "@mui/material";
 
 function Hero() {
   return (
     <Box
       sx={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        bgcolor: 'primary.main',
-        color: 'white',
+        minHeight: "60vh",
+        display: "flex",
+        flexDirection: { xs: "column", sm: "column", md: "row" },
+        justifyContent: "center",
+        alignItems: "center",
+        bgcolor: "primary.main",
+        color: "white",
         py: { xs: 8, md: 10 },
-        textAlign: 'center',
+        px: { xs: 8, md: 10 },
+        gap: 3,
       }}
     >
-      <Container maxWidth="md">
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          textAlign: { xs: "center", sm: "center", md: "left" },
+          alignItems: { xs: "center", sm: "center", md: "flex-start" },
+        }}
+      >
+        <Typography variant="h5" color="secondary.main" component="p" sx={{ mb: 4 }}>
+          Mopify Cleaning Services
+        </Typography>
         <Typography
-          variant="h2"
+          variant="h3"
           component="h1"
           gutterBottom
-          sx={{ fontWeight: 'bold' }}
+          sx={{ fontWeight: "bold" }}
         >
-          Innovative Solutions for Your Business
+          Expert Cleaning For Residential, Commercial & Medical Sites
         </Typography>
-        <Typography variant="h5" component="p" sx={{ mb: 4 }}>
-          We build amazing web applications to help you succeed.
-        </Typography>
-        <Button variant="outlined" size="large" sx={{ color: 'white', borderColor: 'white', ':hover': { bgcolor: 'primary.light' } }}>
-          Learn More
+        <Button
+          variant="outlined"
+          size="large"
+          sx={{
+            color: "white",
+            borderColor: "white",
+            ":hover": { bgcolor: "primary.light" },
+          }}
+        >
+          Contact Us
         </Button>
-      </Container>
+      </Box>
+      <Box
+        component="img"
+        sx={{
+          height: "auto",
+          width: "100%",
+          maxWidth: { xs: "60vw", sm: "60vw", md: "40vw" },
+          display: "block", // To handle centering
+          mx: "auto", // Center the image horizontally
+          borderRadius: 6,
+        }}
+        alt="A lady cleaning computers."
+        src={
+          "https://www.pristinehome.com.au/wp-content/uploads/2020/01/15-Cleaning-Tips-from-Professional-Cleaners.jpg"
+        }
+      />
     </Box>
   );
 }
