@@ -1,13 +1,11 @@
 import React from "react";
 import {
   Box,
-  Container,
   Divider,
-  Typography,
-  Button,
   List,
   ListItem,
   ListItemText,
+  Typography,
 } from "@mui/material";
 
 const descriptionParagraphs = [
