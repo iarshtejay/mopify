@@ -1,9 +1,5 @@
 import React from "react";
 import {
-  Container,
-  Grid,
-  Card,
-  CardContent,
   Typography,
   Box,
 } from "@mui/material";
