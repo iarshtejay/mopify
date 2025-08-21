@@ -35,7 +35,7 @@ export default function Gallery() {
       >
         Our Team in Action
       </Typography>
-      <Box sx={{ width: { xs: "90%", md: "65%" }, mx: "auto", my: 4 }}>
+      <Box sx={{ width: { xs: "90%", md: "50%" }, mx: "auto", my: 4 }}>
         <Swiper
           navigation={true}
           pagination={{
