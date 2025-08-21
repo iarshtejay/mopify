@@ -1,0 +1,37 @@
+[
+    {
+        "id": "phone",
+        "title": "Phone",
+        "text": "0416 593 785",
+        "href": "tel:0416593785",
+        "icon": "PhoneIcon"
+    },
+    {
+        "id": "email",
+        "title": "Email",
+        "text": "mopifyqld@gmail.com",
+        "href": "mailto:mopifyqld@gmail.com",
+        "icon": "EmailIcon"
+    },
+    {
+        "id": "location",
+        "title": "Location",
+        "text": "73 Stewart Road<br/> Griffin, QLD, Australia",
+        "href": null,
+        "icon": "LocationOnIcon"
+    },
+    {
+        "id": "facebook",
+        "title": "Facebook",
+        "text": "Mopify Cleaning Services",
+        "href": "https://www.facebook.com/people/Mopify-Cleaning-Services/61577928977122",
+        "icon": "FacebookIcon"
+    },
+    {
+        "id": "instagram",
+        "title": "Instagram",
+        "text": "@mopifyqld",
+        "href": "https://www.instagram.com/mopifyqld",
+        "icon": "InstagramIcon"
+    }
+]
