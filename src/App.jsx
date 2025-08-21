@@ -1,5 +1,6 @@
 import React from 'react';
 import { CssBaseline } from '@mui/material';
+import Gallery from './components/Gallery';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import HeroSecond from './components/HeroSecond';
@@ -17,6 +18,7 @@ function App() {
         <HeroSecond />
         <OurServices />
         <Features />
+        <Gallery />
       </main>
       <Footer />
     </>

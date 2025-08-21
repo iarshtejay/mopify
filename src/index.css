@@ -123,3 +123,20 @@
   font-weight: normal;
   src: url("./assets/fonts/Omnes Black Italic.woff") format("woff");
 }
+
+.my-simple-swiper {
+  aspect-ratio: 16 / 9;
+}
+
+.my-simple-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%; /* Make the image fill the container's new responsive height */
+  object-fit: cover; /* This continues to prevent image distortion */
+}
+
+.my-simple-swiper .swiper-button-prev::after,
+.my-simple-swiper .swiper-button-next::after {
+  font-weight: 900; /* Makes the arrow lines thicker */
+  font-size: 3.0rem; /* Increases the overall size of the arrow icon */
+}
