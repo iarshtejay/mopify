@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardMedia, Typography, Box } from "@mui/material";
+import { Card, CardMedia, Typography, Box, CardContent } from "@mui/material";
 
 const cardDimensionsConstants = { base: 130, multiplier: 1.5 };
 const cardDimensions = {
@@ -12,8 +12,11 @@ function ServiceCard({ image, caption }) {
     <Card
       position="relative"
       sx={{
-        borderRadius: 3,
         width: cardDimensions.width,
+        background: "background.default",
+        color: "background.default",
+        boxShadow: "none",
+        borderRadius: 3
       }}
     >
       {image && (
@@ -25,13 +28,12 @@ function ServiceCard({ image, caption }) {
         />
       )}
       {caption && (
-        <Box
+        <CardContent
           sx={{
             position: "relative",
             textAlign: "center",
             bgcolor: "primary.main",
-            color: "white",
-            borderRadius: 3,
+            color: "white"
           }}
         >
           {caption.map((line, index) => (
@@ -39,7 +41,7 @@ function ServiceCard({ image, caption }) {
               {line}
             </Typography>
           ))}
-        </Box>
+        </CardContent>
       )}
     </Card>
   );
