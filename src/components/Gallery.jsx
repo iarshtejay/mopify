@@ -11,13 +11,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import theme from "../theme";
 
-const images = [
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-  "https://images.unsplash.com/photo-1511884642898-4c92249e20b6",
-  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
-  "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
-  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
-];
+import teamImages from "../data/galleryData";
 
 export default function Gallery() {
   return (
@@ -63,7 +57,7 @@ export default function Gallery() {
             "--swiper-theme-color": theme.palette.secondary.main,
           }} // Add border radius and overflow hidden here
         >
-          {images.map((imgSrc, index) => (
+          {teamImages.map((imgSrc, index) => (
             <SwiperSlide key={index}>
               <img src={imgSrc} alt={`Slide ${index + 1}`} />
             </SwiperSlide>
