@@ -20,6 +20,7 @@ function Footer() {
   return (
     <Box
       sx={{ bgcolor: "primary.main", color: "white", py: { xs: 8, md: 12 } }}
+      id="footer"
     >
       <Container maxWidth={false}>
         <Box
