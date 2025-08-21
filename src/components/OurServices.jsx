@@ -1,66 +1,11 @@
-import React from "react";
-import {
-  Typography,
-  Box,
-} from "@mui/material";
-import CodeIcon from "@mui/icons-material/Code";
+import { Typography, Box } from "@mui/material";
 import ServiceCard from "./ServiceCard";
 
-// ... (the features array remains the same)
-const services = [
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Regular Cleaning & Housekeeping",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Detailed Home Hygiene Cleaning",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Move in/Move Out Hygiene Cleaning",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Deep Spring Cleaning",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Mini Express Spring Cleaning",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Pre-Sale & Settlement Cleaning",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Builders & Renovation Cleaning",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Bond & Rental Inspection Cleaning",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Carpet Steam Cleaning",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Upholstery Cleaning",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Leather Cleaning",
-  },
-  {
-    image: <CodeIcon fontSize="large" color="primary" />,
-    caption: "Wet & Dry Vacuuming",
-  },
-];
+import services from "../data/servicesData";
 
 const descriptionParagraphs = [
   "At Mopify Cleaning Services, we offer more than just cleaning — we deliver reliable service with a personal touch. As a local, independent company, our experienced team is committed to providing high-quality cleaning tailored to your needs, whether at home, office, or medical facility. We prioritise clear communication, flexibility, and a hassle-free experience for both clients and businesses.",
-  "Booking with us is simple. You can request quotes or schedule services anytime by calling our friendly team 24/7. We’re here to make your cleaning experience smooth, convenient, and trustworthy."
+  "Booking with us is simple. You can request quotes or schedule services anytime by calling our friendly team 24/7. We’re here to make your cleaning experience smooth, convenient, and trustworthy.",
 ];
 
 function OurServices() {
@@ -126,12 +71,7 @@ function OurServices() {
         }}
       >
         {services.map((service) => (
-          <ServiceCard
-            image={
-              "https://nittygritty.ae/cdn/shop/articles/80d7b81882_1_1920x.jpg"
-            }
-            caption={service.caption}
-          />
+          <ServiceCard image={service.image} caption={service.caption} />
         ))}
       </Box>
     </Box>

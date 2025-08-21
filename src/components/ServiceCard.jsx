@@ -34,9 +34,11 @@ function ServiceCard({ image, caption }) {
             borderRadius: 3,
           }}
         >
-          <Typography variant="p" fontWeight={"bold"}>
-            {caption}
-          </Typography>
+          {caption.map((line, index) => (
+            <Typography key={index} variant="h8" component="div" fontWeight="bold">
+              {line}
+            </Typography>
+          ))}
         </Box>
       )}
     </Card>
