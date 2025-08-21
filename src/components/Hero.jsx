@@ -44,6 +44,7 @@ function Hero() {
             borderColor: "white",
             ":hover": { bgcolor: "primary.light" },
           }}
+          href="#footer"
         >
           Contact Us
         </Button>

@@ -22,14 +22,8 @@ function Header() {
         >
           MOPIFY
         </Typography>
-        <Button color="inherit" href="#features">
-          Features
-        </Button>
-        <Button color="inherit" href="#contact">
-          Contact
-        </Button>
-        <Button variant="contained" color="primary">
-          Get Started
+        <Button variant="contained" color="primary" href="#footer">
+          Book Now
         </Button>
       </Toolbar>
     </AppBar>
