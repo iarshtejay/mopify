@@ -4,7 +4,6 @@ import Gallery from './components/Gallery';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import HeroSecond from './components/HeroSecond';
-import Features from './components/Features';
 import Footer from './components/Footer';
 import OurServices from './components/OurServices';
 
@@ -17,7 +16,6 @@ function App() {
         <Hero />
         <HeroSecond />
         <OurServices />
-        <Features />
         <Gallery />
       </main>
       <Footer />
