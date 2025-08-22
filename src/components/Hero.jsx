@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Container, Typography, Button } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
+import heroImg from "../assets/images/hero1.jpg";
 
 function Hero() {
   return (
@@ -25,7 +25,12 @@ function Hero() {
           alignItems: { xs: "center", sm: "center", md: "flex-start" },
         }}
       >
-        <Typography variant="h5" color="secondary.main" component="p" sx={{ mb: 4 }}>
+        <Typography
+          variant="h5"
+          color="secondary.main"
+          component="p"
+          sx={{ mb: 4 }}
+        >
           Mopify Cleaning Services
         </Typography>
         <Typography
@@ -60,9 +65,7 @@ function Hero() {
           borderRadius: 6,
         }}
         alt="A lady cleaning computers."
-        src={
-          "https://www.pristinehome.com.au/wp-content/uploads/2020/01/15-Cleaning-Tips-from-Professional-Cleaners.jpg"
-        }
+        src={heroImg}
       />
     </Box>
   );
