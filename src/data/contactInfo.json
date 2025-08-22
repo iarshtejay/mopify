@@ -12,9 +12,10 @@
         "id": "email",
         "title": "Email",
         "text": [
-            "mopifyqld@gmail.com"
+            "gurunirman@gmail.com",
+            "gurunirman@outlook.com"
         ],
-        "href": "mailto:mopifyqld@gmail.com",
+        "href": "mailto:gurunirman@gmail.com, gurunirman@outlook.com",
         "icon": "EmailIcon"
     },
     {
