@@ -1,5 +1,6 @@
 import { Box, Typography, Button } from "@mui/material";
 import heroImg from "../assets/images/hero1.jpg";
+import logoSecTrans from "../assets/logos/logoSecTrans.png";
 
 function Hero() {
   return (
@@ -12,8 +13,8 @@ function Hero() {
         alignItems: "center",
         bgcolor: "primary.main",
         color: "white",
-        py: { xs: 8, md: 10 },
-        px: { xs: 8, md: 10 },
+        py: { xs: 10, md: 10 },
+        px: { xs: 10, md: 10 },
         gap: 3,
       }}
     >
@@ -25,14 +26,22 @@ function Hero() {
           alignItems: { xs: "center", sm: "center", md: "flex-start" },
         }}
       >
-        <Typography
+        <Box
+          component="img"
+          src={logoSecTrans}
+          alt="Mopify Logo"
+          sx={{
+            width: { xs: "50%", md: "15%" }, 
+          }}
+        />
+        {/* <Typography
           variant="h5"
           color="secondary.main"
           component="p"
           sx={{ mb: 4 }}
         >
           Mopify Cleaning Services
-        </Typography>
+        </Typography> */}
         <Typography
           variant="h3"
           component="h1"
