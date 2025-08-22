@@ -51,12 +51,19 @@ function Footer() {
           flexWrap="wrap" // Allow wrapping if there are too many items
         >
           {contactData.map((item) => (
-            <Stack
+            <Box
               key={item.id}
-              direction="column"
-              alignItems="center"
-              spacing={1}
-              sx={{ textAlign: "center" }}
+              component="a"
+              href={item.href || ""}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: 1,
+                textAlign: "center",
+                textDecoration: "none",
+                color: "inherit",
+              }}
             >
               <Avatar
                 sx={{
@@ -71,24 +78,12 @@ function Footer() {
               <Typography variant="h6" component="div">
                 {item.title}
               </Typography>
-              {item.href ? (
-                <Link
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener"
-                  underline="hover"
-                  color="inherit"
-                >
-                  {item.text}
-                </Link>
-              ) : (
-                <Typography
-                  variant="body1"
-                  sx={{ opacity: 0.8 }}
-                  dangerouslySetInnerHTML={{ __html: item.text }}
-                />
-              )}
-            </Stack>
+              {item.text.map((textLine) => (
+                <Typography variant="body1" sx={{ opacity: 0.8 }}>
+                  {textLine}
+                </Typography>
+              ))}
+            </Box>
           ))}
         </Stack>
       </Container>

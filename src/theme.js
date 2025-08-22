@@ -3,7 +3,8 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#B03623', // Dark brown
+      /*main: '#B03623', // Dark brown*/
+      main: '#B0462F', // Match with logo pdf
     },
     secondary: {
       main: '#F9E2bc', // Very light yellow

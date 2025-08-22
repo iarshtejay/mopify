@@ -4,7 +4,7 @@ const imageModules = import.meta.glob("../assets/images/team*.jpeg", {
   eager: true,
 });
 
-const n = 12;
+const n = 14;
 
 const teamImages = Array.from({ length: n }).map((_, index) => {
   const imagePath = `../assets/images/team${index + 1}.jpeg`;
