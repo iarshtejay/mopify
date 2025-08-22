@@ -1,5 +1,5 @@
-import React from "react";
 import { AppBar, Toolbar, Typography, Button } from "@mui/material";
+import LogoNoText from "../assets/logos/logoNoTextP.svg?react";
 
 function Header() {
   return (
@@ -8,13 +8,14 @@ function Header() {
       elevation={1}
       color="default"
       // Frosted Glass
-      // style={{
-      //   backgroundColor: "rgba(255, 255, 255, 0.25)",
-      //   backdropFilter: "blur(10px)",
-      //   WebkitBackdropFilter: "blur(10px)",
-      // }}
+      style={{
+        backgroundColor: "rgba(255, 255, 255, 0.80)",
+        backdropFilter: "blur(5px)",
+        WebkitBackdropFilter: "blur(5px)",
+      }}
     >
       <Toolbar>
+        <LogoNoText />
         <Typography
           variant="h6"
           component="div"

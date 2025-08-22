@@ -3,10 +3,10 @@
               "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="8.45833in" height="8.61111in"
+     width="80px" height="80px"
      viewBox="0 0 609 620">
   <path id="Selection"
-        fill="currentColor" stroke="currentColor" stroke-width="0"
+        fill="#B0462F" stroke="currentColor" stroke-width="0"
         d="M 298.00,81.00
            C 294.60,62.00 300.01,37.34 311.90,22.01
              319.08,12.76 334.86,2.50 342.86,17.00
