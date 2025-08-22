@@ -23,7 +23,7 @@ function Header() {
           MOPIFY
         </Typography>
         <Button variant="contained" color="primary" href="#footer">
-          Book Now
+          Contact Us
         </Button>
       </Toolbar>
     </AppBar>
