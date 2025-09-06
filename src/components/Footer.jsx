@@ -57,7 +57,7 @@ function Footer() {
           direction={{ xs: "column", md: "row" }}
           spacing={{ xs: 6, md: 4 }}
           justifyContent="center" // Changed to 'center' for better spacing with more items
-          alignItems="flex-start"
+          alignItems={{ xs: "center", md: "flex-start" }}
           flexWrap="wrap" // Allow wrapping if there are too many items
         >
           {contactData.map((item) => (
