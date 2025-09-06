@@ -1,4 +1,5 @@
-import { Box, Container, Typography, Stack, Link, Avatar } from "@mui/material";
+import { Box, Container, Typography, Stack, Avatar } from "@mui/material";
+import ReactGA from "react-ga4";
 
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
@@ -17,6 +18,15 @@ const iconMap = {
 };
 
 function Footer() {
+  const handleContactClick = ({ source }) => {
+    ReactGA.event({
+      category: "Contact",
+      action: `Click_to_${source}`,
+      label: `Main Contact Section ${source}`,
+    });
+    console.log(`GA Event: Click_to_${source} sent.`);
+  };
+
   return (
     <Box
       sx={{ bgcolor: "primary.main", color: "white", py: { xs: 8, md: 12 } }}
@@ -55,6 +65,8 @@ function Footer() {
               key={item.id}
               component="a"
               href={item.href || ""}
+              target="_blank"
+              onClick={() => handleContactClick({ source: item.title })}
               sx={{
                 display: "flex",
                 flexDirection: "column",
